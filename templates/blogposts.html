@@ -3,7 +3,9 @@
 {?rows}
   <ul>
   {#rows}
-    <li><a href="{baseURL}/{id}">{value}</a></li>
+  	{#value}
+    <li><a href="{baseURL}/blog/{slug}">{title}</a></li>
+    {/value}
   {/rows}
     </ul>
   {:else}
